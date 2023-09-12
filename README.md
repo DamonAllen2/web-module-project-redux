@@ -44,35 +44,35 @@ In this project, you take a fairly complex application used to search a movie da
 #### Connecting the Delete and Add Movie actions
 > *Looks like you got a good handle on mapping stateToProps! Now let's connect some actions.*
 
-* [ ] Note that the deleteMovie reducer case and action creator are already available.
+* [ 1 ] Note that the deleteMovie reducer case and action creator are already available.
 
-* [ ] **We can delete movies within the Movie Component.** Connect the deleteMovie action through the connect method.
+* [ 2 ] **We can delete movies within the Movie Component.** Connect the deleteMovie action through the connect method.
 
-* [ ] **Find the HTML element that should trigger a deletion in the movie component.** Create and connect the necessary event handlers to call deleteMovie on the current movie's id. After setting the state, redirect the user using the push('/movies') command.
+* [ 3 ] **Find the HTML element that should trigger a deletion in the movie component.** Create and connect the necessary event handlers to call deleteMovie on the current movie's id. After setting the state, redirect the user using the push('/movies') command.
 
-* [ ] Add in an ADD_MOVIE case to movieReducer.js.
-* [ ] Make this new case return a version of state with new movie values passed in through the payload.
-* [ ] Create an action creator for addMovie in movieActions.js.
-* [ ] Find the component that triggers the adding of a movie and connect the addMovie action.
-* [ ] Create and connect the necessary event handlers to call addMovie.
-* [ ] Add in push('/movies/) after calling your action to trigger a redirect.
+* [ 1 ] Add in an ADD_MOVIE case to movieReducer.js.
+* [ 2 ] Make this new case return a version of state with new movie values passed in through the payload.
+* [ 3 ] Create an action creator for addMovie in movieActions.js.
+* [ 4 ] Find the component that triggers the adding of a movie and connect the addMovie action.
+* [ 5 ] Create and connect the necessary event handlers to call addMovie.
+* [ 6 ] Add in push('/movies/) after calling your action to trigger a redirect.
 
 #### Build out the favorites reducer
 > *Alright! Now that the movie reducer is complete, you have the chance to build a reducer from scratch to handle favorite movie functionality. We will also work on combining reducers.*
 
-* [ ] Create a reducer file for handling business logic for favorites. Include the following state values in your initialState setup:
+* [ 1 ] Create a reducer file for handling business logic for favorites. Include the following state values in your initialState setup:
   -  favorites: an array of movie objects
   -  displayFavorites: a boolean that holds if favorite elements should be displayed in app
 
-* [ ] **Import your new reducer file into the ./reducers/index.js file.** As a start, only add a default case to the switch statement.
+* [ 2 ] **Import your new reducer file into the ./reducers/index.js file.** As a start, only add a default case to the switch statement.
 
-* [ ] **In reducers/index.js, use the combineReducers method to connect both movies and favorite movies to redux.**
+* [ 3 ] **In reducers/index.js, use the combineReducers method to connect both movies and favorite movies to redux.**
 
-* [ ] **Notice that your movie functions no longer work. Why?** Make changes necessary to get the component connected to the movie reducer working again.
+* [ 4 ] **Notice that your movie functions no longer work. Why?** Make changes necessary to get the component connected to the movie reducer working again.
 
-* [ ] Connect the favorites state to the FavoriteMovieList component and test.
+* [ 5 ] Connect the favorites state to the FavoriteMovieList component and test.
 
-* [ ] Connect the displayFavorites state to the Movie and MovieHeader component.
+* [ 6 ] Connect the displayFavorites state to the Movie and MovieHeader component.
 
 #### Build out the favorites actions
 > *Now is your chance to build our all the rest of the app on your own. You can do this!*
